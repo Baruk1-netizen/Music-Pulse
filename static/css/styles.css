@@ -192,7 +192,6 @@ select {
 .songlistdetails{
   display: flex;
   flex-direction: row;
-  
   gap: 8px;
   width: 100%;
 }
