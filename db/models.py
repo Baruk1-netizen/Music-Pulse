@@ -21,7 +21,7 @@ class User(db.Model):
 
 
 class Accommodation (db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+   
    
  
    
