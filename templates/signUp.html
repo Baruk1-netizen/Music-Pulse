@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Music Pulse</title>
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='./css/signUp.css') }}">
+</head>
+
+<body>
+
+<div class="container"> 
+  
+<div class="container-overlay"></div>
+<div class="signup">
+ 
+  <div class="nav">
+    <a href="{{ url_for('login') }}">Sign in</a>
+    <a href="{{ url_for('signUp') }}">Sign up</a>
+  </div>
+  
+  <div class="signIn">
+    <form id="signupForm", action='./signUp', method='POST'>
+      {% if error %}
+        <p style="color:red">{{ error }}</p>
+      {% endif %}
+      <div class="forms">
+        <div class="form-group">
+          <label for="username">Enter username</label>
+          <input type="text" id="username" name="username" required placeholder="Enter your username...">
+        </div>
+        <div class="form-group">
+          <label for="email">Enter your email</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email...">
+        <div class="form-group">
+          <label for="password">Create Password:</label>
+          <input type="password" id="password" name="password" required placeholder="Create your password...">
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password...">
+        </div>
+        <p><a href="#">Forgot your password?</a></p>
+      </div>
+      <button type="submit">Sign up</button>
+    </form>
+    <p>Already have an account? <a href="./login.html">Sign in</a></p>
+  </div>
+  
+</div>
+
+</div>
+
+
+<video autoplay muted loop>
+  <source src="/static/images/fallingflakesvid.mp4">
+</video>
+
+</body>
+
+</html>

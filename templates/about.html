@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Music Pulse</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/about.css') }}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Music Pulse</a>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('landingpage') }}">Home</a></li>
+          <li><a href="{{ url_for('landingpage') }}">Explore</a></li>
+          <li><a href="#">Artists</a></li>
+          <li><a href="{{ url_for('landingpage') }}">Trending Songs</a></li>
+          <li><a href="{{ url_for('landingpage') }}">New Songs</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+        <div class="search-box">
+          <input type="text" placeholder="Search...">
+          <button>Search</button>
+        </div>
+        <div class="auth-buttons">
+          <a href="{{ url_for('login') }}">Login</a>
+          <a href="{{ url_for('signUp') }}">Sign Up</a>
+        </div>
+      </nav>
+
+        <header>
+            <h1>Music Pulse</h1>
+        </header>
+        
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Music Pulse is your ultimate destination for an unparalleled music experience. We bring together millions of songs from various genres and artists, all in one place. Whether you're into chart-topping hits, timeless classics, or underground beats, Music Pulse has something for every music lover. Our goal is to create a platform that allows you to explore, create, and share music with ease.
+            </p>
+        
+            <p>
+                Our mission is simple: to make music accessible, enjoyable, and personalized for everyone. With features like playlist creation, seamless music streaming, and personalized song recommendations, we aim to bring music closer to your heart. Whether you’re relaxing at home, working out, or on the go, Music Pulse lets you control the soundtrack to your life.
+            </p>
+        
+            <h2>Key Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Personalized Playlists</h3>
+                    <p>Create and manage your own playlists for any occasion.</p>
+                </div>
+                <div class="feature">
+                    <h3>Seamless Streaming</h3>
+                    <p>Enjoy smooth, high-quality music streaming anytime, anywhere.</p>
+                </div>
+                <div class="feature">
+                    <h3>Music Discovery</h3>
+                    <p>Find new artists, songs, and genres tailored to your taste.</p>
+                </div>
+            </div>
+        
+            <h2>Our Vision</h2>
+            <p>
+                At Music Pulse, we believe that music has the power to inspire, connect, and transform lives. Our vision is to become the go-to platform for discovering and sharing music, empowering both artists and listeners to engage with their favorite tunes in new and exciting ways. We are constantly evolving to meet the needs of our users, delivering a world-class music experience at your fingertips.
+            </p>
+        </div>
+        <div class="overlay"> </div>
+        <video autoplay muted loop>
+            <source src="/static/images/starsvid.mp4">
+        </video>
+
+        
+        <div class="footer">
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="{{ url_for('landingpage') }}">Artists</a></li>
+                    <li><a href="{{ url_for('landingpage') }}">Trending Songs</a></li>
+                    <li><a href="{{ url_for('landingpage') }}">New Songs</a></li>
+                    <li><a href="#">Charts</a></li>
+                    <li><a href="#">Videos</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>For Users</h3>
+                <ul>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Go Premium</a></li>
+                    <li><a href="#">Wordpress</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>For Artists and Vendors</h3>
+                <ul>
+                    
+                    <li><a href="#">Get Verified</a></li>
+                    <li><a href="#">Artists FAQ</a></li>
+                    <li><a href="#">Artists Distributors</a></li>
+                    <li><a href="#">Vendors Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li class="nav-item"><a href="{{ url_for('about') }}">About</a></li>
+                    <li class="nav-item"><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Visual Identity</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+</body>
+
+</html>

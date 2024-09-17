@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Music Pulse</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/contact.css') }}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="{{ url_for('landingpage') }}" class="logo">Music Pulse</a>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('landingpage') }}">Home</a></li>
+          <li><a href="{{ url_for('landingpage') }}">Explore</a></li>
+          <li><a href="{{ url_for('landingpage') }}">Artists</a></li>
+          <li><a href="{{ url_for('landingpage') }}">Trending Songs</a></li>
+          <li><a href="{{ url_for('landingpage') }}">New Songs</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+        <div class="search-box">
+          <input type="text" placeholder="Search...">
+          <button>Search</button>
+        </div>
+        <div class="auth-buttons">
+          <a href="{{ url_for('login') }}"">Login</a>
+          <a href="{{ url_for('signUp') }}"">Sign Up</a>
+        </div>
+      </nav>
+    <header>
+        <h1 style="color: aqua;">Contact Music Pulse</h1>
+
+    </header>
+<div class="container1">
+    <section id="contact">
+        <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>If you have any questions, feedback, or need support, feel free to reach out to us. We're here to help!</p>
+            <p>Email: <a href="mailto:support@musicpulse.com">support@musicpulse.com</a></p>
+            <p>Phone: +1 (800) 123-4567</p>
+            <p>Address: 123 Music Avenue, Suite 101, Melody City, Kenya</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <div class="communicate">
+            <form action='/contact' method="POST">
+                {% if message%}
+                    <p style="color:#00e5ff">{{ message }}</p>
+                {% endif %}
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <div class = "submit">
+                <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+
+</div>
+    <div class="footer">
+        <div class="footer-column">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="{{ url_for('landingpage') }}">Artists</a></li>
+                <li><a href="{{ url_for('landingpage') }}">Trending Songs</a></li>
+                <li><a href="{{ url_for('landingpage') }}">New Songs</a></li>
+                <li><a href="#">Charts</a></li>
+                <li><a href="#">Videos</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>For Users</h3>
+            <ul>
+                <li><a href="#">Download</a></li>
+                <li><a href="{{ url_for('contact') }}">Help Center</a></li>
+                <li><a href="#">Go Premium</a></li>
+                <li><a href="#">Wordpress</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>For Artists and Vendors</h3>
+            <ul>
+                
+                <li><a href="#">Get Verified</a></li>
+                <li><a href="#">Artists FAQ</a></li>
+                <li><a href="#">Artists Distributors</a></li>
+                <li><a href="#">Vendors Login</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li class="nav-item"><a href="{{ url_for('about') }}">About</a></li>
+                <li class="nav-item"><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Visual Identity</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
