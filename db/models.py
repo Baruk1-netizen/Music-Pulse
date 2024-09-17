@@ -20,7 +20,7 @@ class User(db.Model):
         return f"User('{self.username}', '{self.email}')"
 
 
-class Accommodation (db.Model):
+
    
    
  
