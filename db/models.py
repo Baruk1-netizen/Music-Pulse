@@ -28,7 +28,7 @@ class Accommodation (db.Model):
     checkoutDate = db.Column(db.DateTime, nullable=False)
     guests = db.Column(db.Integer, nullable=False)
     room = db.Column(db.String(100), nullable=False)
-    hotel = db.Column(db.String(100), nullable=False)
+    
 
     def __repr__(self):
         return f"Accommodation('{self.name}', '{self.email}', '{self.checkinDate}', '{self.checkoutDate}', '{self.guests}', '{self.room}')"
