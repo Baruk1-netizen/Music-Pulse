@@ -1,31 +1,38 @@
-# PROJECT NAME: TOURISTO PROJECT
+# Music Pulse 🎶
 
-## INTRODUCTION
-My project, Touristo, is a tourist information system designed to help visitors explore specific parks efficiently and enjoyably by providing detailed information on attractions, dining, and accommodations. The application aims to enhance the travel experience by offering personalized recommendations based on user preferences.
+**Author:** Baruk1-netizen
 
-Touristo was created for travelers seeking a comprehensive and user-friendly guide to navigate unfamiliar cities. My personal focus was on ensuring seamless integration between the frontend and backend, and optimizing the application for both web and mobile platforms.
+## Project Overview
 
-By developing Touristo, I aimed to create a tool that would help travelers make the most of their trips, just as I had always wished for during my own adventures.
+**Music Pulse** is an online music player designed to provide users with a seamless experience for searching, discovering, and playing music. This project integrates the Spotify API to fetch real-time trending songs, popular artists, playlists, and song details. Users can create their own playlists, listen to song previews, and interact with the music library via an intuitive interface.
 
-[TOURISTO PROJECT LINK](https://touristo-4.onrender.com)
+## Features
 
-[AUTHOR LINKEDIN](https://www.linkedin.com/in/baruk-ali-634085281)
+- **Spotify API Integration**: Real-time data fetching for trending songs, popular artists, and curated playlists.
+- **Song Search**: Users can search for songs by artist and song title, with live results fetched from the Spotify database.
+- **Song Previews**: Play short audio previews of tracks directly within the app.
+- **Create Playlists**: Users can create and customize playlists from fetched songs.
+- **Scrollable Cards**: Songs, artists, and playlists are displayed as scrollable cards with smooth swipe functionality.
+- **Responsive Design**: Designed to work across different devices with a focus on mobile-first development.
 
-## USAGE
-Once you click the link, you can explore the features of Touristo:
+## Technologies Used
 
-- **Home Page**: Browse the homepage for top tourist attractions, recommended restaurants, and popular hotels.
-- **Search**: Use the search bar to find specific attractions or services in your chosen city.
-- **Personalized Recommendations**: Log in to receive personalized travel suggestions based on your preferences.
-- **Interactive Maps**: Use the interactive maps to plan your route and explore nearby points of interest.
-- **User Reviews and Ratings**: Read reviews from other travelers and leave your own feedback to help others.
+- **HTML5**, **CSS**, **JavaScript** for building the front end.
+- **Spotify Web API** for fetching music data and handling song playback.
+- **OAuth 2.0** for user authentication and authorization.
+- **Responsive Design** for enhanced usability on mobile and desktop.
+  
+## How It Works
 
-## RELATED PROJECTS
-If you're interested in Touristo, you might also like these projects:
+1. **Authentication**: Users log in using their Spotify credentials, obtaining an access token to interact with the Spotify API.
+2. **Search Functionality**: Use the search form to find songs by inputting artist names and song titles.
+3. **Playlists**: Users can browse through trending playlists, genres, and individual songs, and can create personalized playlists.
+4. **Song Details**: Each song includes detailed information such as artist name, album, and a playable preview.
+5. **UI/UX**: Enjoy a smooth user experience with scrollable cards for songs and playlists, as well as play, pause, skip, forward, rewind, and volume control for song previews.
 
-- **TravelMate**: A travel planning app that helps users create itineraries and manage bookings.
-- **CityGuide**: An interactive guide for exploring major cities around the world, with detailed maps and local tips.
-- **TripPlanner**: A comprehensive tool for organizing trips, including budget tracking and activity suggestions.
+## Setup
 
-## AUTHOR
-[@Baruk1-netizen](https://www.linkedin.com/in/baruk-ali-634085281)
+ Clone the repository:
+   ```bash
+   git clone https://github.com/Baruk1-netizen/music-pulse.git
+   cd music-pulse
