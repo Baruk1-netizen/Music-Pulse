@@ -30,9 +30,7 @@ class User(db.Model):
     
     
 
-    def __repr__(self):
-        return f"Accommodation('{self.name}', '{self.email}', '{self.checkinDate}', '{self.checkoutDate}', '{self.guests}', '{self.room}')"
-
+    
 class Package (db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
