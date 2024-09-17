@@ -1,6 +1,6 @@
 from functools import wraps
 from flask import render_template, redirect, request, session
-from db.models import User, Accommodation, Package, Contact, Admin
+from db.models import User, Package, Contact, Admin
 from db.db import db
 from datetime import datetime
 from config import app
