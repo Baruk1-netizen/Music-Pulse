@@ -26,7 +26,7 @@ class Accommodation (db.Model):
     email = db.Column(db.String(120), nullable=False)
     checkinDate = db.Column(db.DateTime, nullable=False)
     checkoutDate = db.Column(db.DateTime, nullable=False)
-    guests = db.Column(db.Integer, nullable=False)
+    
     
     
 
