@@ -507,8 +507,9 @@ h3 {
   #song-detail {
     width: 500px;
     height: 200px;
-    /* background-color: blue; */
+   
   }
+  
   .songlistdetails{
     flex-direction: column;
   }
