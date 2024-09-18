@@ -125,11 +125,7 @@ def admin():
     users = User.query.all()
     contacts = Contact.query.all()
     
-    # Create a list of dictionaries containing package information
-    package_list = []
-    for pkg in packages:
 
-        package_list.append(package_info)
         
     # Create a list of dictionaries containing accommodation information
     accommodation_list = []
