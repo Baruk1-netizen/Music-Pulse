@@ -133,7 +133,7 @@ def admin():
             'email': pkg.email,
             'checkinDate': pkg.checkinDate,
             'checkoutDate': pkg.checkoutDate,
-            'guests': pkg.guests,
+            
             
         }
         package_list.append(package_info)
