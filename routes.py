@@ -132,7 +132,7 @@ def admin():
     for acc in accommodations:
         accommodation_info = {
             'name': acc.name,
-            'email': acc.email,
+            
             
             
            
