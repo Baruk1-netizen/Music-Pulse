@@ -124,7 +124,7 @@ def admin():
     context = {}
     users = User.query.all()
     
-    accommodations = Accommodation.query.all()
+    
     contacts = Contact.query.all()
     
     # Create a list of dictionaries containing package information
