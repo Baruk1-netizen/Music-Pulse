@@ -131,7 +131,7 @@ def admin():
         package_info = {
             'name': pkg.name,
             'email': pkg.email,
-            'checkinDate': pkg.checkinDate,
+            
             
             
             
