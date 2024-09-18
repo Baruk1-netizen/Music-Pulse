@@ -135,7 +135,7 @@ def admin():
             'email': acc.email,
             'checkinDate': acc.checkinDate,
             'checkoutDate': acc.checkoutDate,
-            'guests': acc.guests,
+           
             
             
         }
