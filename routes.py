@@ -136,7 +136,7 @@ def admin():
             'checkinDate': acc.checkinDate,
             'checkoutDate': acc.checkoutDate,
             'guests': acc.guests,
-            'room': acc.room,
+            
             
         }
         accommodation_list.append(accommodation_info)
