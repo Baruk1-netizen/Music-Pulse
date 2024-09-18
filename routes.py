@@ -127,10 +127,7 @@ def admin():
     
 
         
-    # Create a list of dictionaries containing accommodation information
-    accommodation_list = []
- 
-        accommodation_list.append(accommodation_info)
+
         
     # Create a list of dictionaries containing contact information
     contact_list = []
