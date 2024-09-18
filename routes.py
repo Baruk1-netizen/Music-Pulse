@@ -133,7 +133,7 @@ def admin():
         accommodation_info = {
             'name': acc.name,
             'email': acc.email,
-            'checkinDate': acc.checkinDate,
+            
             
            
             
