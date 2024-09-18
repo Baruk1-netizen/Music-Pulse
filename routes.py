@@ -134,7 +134,7 @@ def admin():
             'checkinDate': pkg.checkinDate,
             'checkoutDate': pkg.checkoutDate,
             'guests': pkg.guests,
-            'pkgType': pkg.pkgType
+            
         }
         package_list.append(package_info)
         
