@@ -126,9 +126,6 @@ def admin():
     contacts = Contact.query.all()
     
 
-        
-
-        
     # Create a list of dictionaries containing contact information
     contact_list = []
     for cont in contacts:
