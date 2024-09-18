@@ -141,7 +141,7 @@ def admin():
     
     # Add both user, package, accommodation, and contact information to the context
     context['users'] = users_dict
-    context['packages'] = package_list
+    
    
     context['contacts'] = contact_list
     
