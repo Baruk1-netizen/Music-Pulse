@@ -123,8 +123,6 @@ def adminLogin():
 def admin():
     context = {}
     users = User.query.all()
-    
-    
     contacts = Contact.query.all()
     
     # Create a list of dictionaries containing package information
