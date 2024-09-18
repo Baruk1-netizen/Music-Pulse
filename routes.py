@@ -141,8 +141,6 @@ def admin():
     
     # Add both user, package, accommodation, and contact information to the context
     context['users'] = users_dict
-    
-   
     context['contacts'] = contact_list
     
     return render_template('admin.html', **context)
