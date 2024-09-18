@@ -123,7 +123,7 @@ def adminLogin():
 def admin():
     context = {}
     users = User.query.all()
-    packages = Package.query.all()
+    
     accommodations = Accommodation.query.all()
     contacts = Contact.query.all()
     
