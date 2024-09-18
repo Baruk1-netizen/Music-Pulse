@@ -19,7 +19,7 @@ class User(db.Model):
     def __repr__(self):
         return f"User('{self.username}', '{self.email}')"
 
-class Package (db.Model):
+
  
     
     
