@@ -129,7 +129,7 @@ def admin():
     package_list = []
     for pkg in packages:
         package_info = {
-            'name': pkg.name,
+            
             
             
             
