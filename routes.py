@@ -130,7 +130,7 @@ def admin():
     for pkg in packages:
         package_info = {
             'name': pkg.name,
-            'email': pkg.email,
+            
             
             
             
