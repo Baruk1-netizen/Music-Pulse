@@ -131,7 +131,7 @@ def admin():
     accommodation_list = []
     for acc in accommodations:
         accommodation_info = {
-            'name': acc.name,
+           
             
             
             
